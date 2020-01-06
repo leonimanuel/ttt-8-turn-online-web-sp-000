@@ -14,8 +14,8 @@ end
 
 def valid_move?(board, index)
   if board[index] == "X" || board[index] == "O"
-    true
-  else false
+    false
+  else true
   end
 end
 
