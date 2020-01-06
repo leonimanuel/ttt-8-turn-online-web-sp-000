@@ -10,10 +10,15 @@ end
 def input_to_index(user_input)
   user_input = user_input.to_i
   index = user_input - 1
+  if index < 0 || index > 8
+    index = -1
+  end
 end
 
 def valid_move?(board, index)
-  if board[index] == "X" || board[index] == "O"
+  if index = -1
+    false
+  elsif board[index] == "X" || board[index] == "O"
     false
   else true
   end
