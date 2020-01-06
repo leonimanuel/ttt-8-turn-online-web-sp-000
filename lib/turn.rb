@@ -10,6 +10,7 @@ end
 def input_to_index(user_input)
   user_input = user_input.to_i
   index = user_input - 1
+  puts index + 5
 end
 
 def valid_move?(board, index)
